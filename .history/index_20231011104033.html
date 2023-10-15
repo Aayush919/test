@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>/* Add this CSS to your existing CSS file */
+        /* Gallery Section */
+        .gallery-section {
+            background: #f9f9f9;
+            padding: 20px 0;
+        }
+        
+        .gallery-heading {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .main-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .gallery-box {
+            position: relative;
+            margin-bottom: 20px;
+            width: calc(33.33% - 20px);
+        }
+        
+        .gallery-box img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-box .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .gallery-box i {
+            font-size: 24px;
+            color: #fff;
+        }
+        
+        .gallery-box:hover img {
+            transform: scale(1.1);
+        }
+        
+        .gallery-box:hover .gallery-overlay {
+            opacity: 1;
+        }
+        </style>
+</head>
+<body>
+    
+    <!-- Gallery Section -->
+<div class="gallery-section">
+    <h2 class="gallery-heading"><span>आपकी</span> गैलरी</h2>
+    <div class="main-gallery">
+        <div class="gallery-box">
+            <img src="images/gallery1.jpg" alt="Image 1">
+            <div class="gallery-overlay">
+                <i class="ri-zoom-in-line"></i>
+            </div>
+        </div>
+        <div class="gallery-box">
+            <img src="images/gallery2.jpg" alt="Image 2">
+            <div class="gallery-overlay">
+                <i class="ri-zoom-in-line"></i>
+            </div>
+        </div>
+        <div class="gallery-box">
+            <img src="images/gallery3.jpg" alt="Image 3">
+            <div class="gallery-overlay">
+                <i class="ri-zoom-in-line"></i>
+            </div>
+        </div>
+        <div class="gallery-box">
+            <img src="images/gallery4.jpg" alt="Image 4">
+            <div class="gallery-overlay">
+                <i class="ri-zoom-in-line"></i>
+            </div>
+        </div>
+        <div class="gallery-box">
+            <img src="images/gallery5.jpg" alt="Image 5">
+            <div class="gallery-overlay">
+                <i class="ri-zoom-in-line"></i>
+            </div>
+        </div>
+        <div class="gallery-box">
+            <img src="images/gallery6.jpg" alt="Image 6">
+            <div class="gallery-overlay">
+                <i class="ri-zoom-in-line"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
